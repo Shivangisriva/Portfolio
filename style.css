@@ -1,0 +1,73 @@
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: url(./Assets/OIP.jpeg);
+}
+.main
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box
+{
+width:40vw;
+height: 50vh;
+background-color:transparent;
+box-shadow:  0 0 5px black,
+0 0 25px black,
+0 0 50px black,
+0 0 75px black;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.inner-box{
+    width: 32vw;
+    height: 34vh;
+    background-color: aliceblue;
+    opacity:0.8; 
+    color: black;
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    line-height: 0.5vw;
+}
+.welcome{
+    animation: slideLeft 1s linear forwards;
+}
+.name{
+    animation: slideRight 1s linear forwards;
+}
+  @keyframes slideLeft {
+    0%{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform:translateX(0px);
+        opacity: 1;
+    }
+  }  
+  @keyframes slideRight {
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform:translateX(0px);
+        opacity: 1;
+    }
+  }  
+  a{
+    text-decoration: none;
+  }
